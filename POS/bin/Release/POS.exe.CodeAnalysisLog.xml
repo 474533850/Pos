@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="D:\开发\开发\Pos\POS\bin\Release\POS.exe">
+   <Modules>
+    <Module Name="pos.exe">
+     <Namespaces>
+      <Namespace Name="POS">
+       <Types>
+        <Type Name="BaseForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SyncData(System.Collections.Generic.List`1&lt;System.String&gt;,System.Int32,System.String,System.Boolean,System.Nullable`1&lt;System.Guid&gt;,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS" File="BaseForm.cs" Line="313">可以在方法 'BaseForm.SyncData(List&lt;string&gt;, int, string, bool, Guid?, string, string)' 中多次释放对象 'dlg'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 313, 323</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FormDownloadProgress" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AsyncCallbackResult(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS" File="FormDownloadProgress.cs" Line="130">可以在方法 'FormDownloadProgress.AsyncCallbackResult(IAsyncResult)' 中多次释放对象 'this'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 130</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FormLogin" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetLocalTime(POS.SYSTEMTIME&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'FormLogin.GetLocalTime(ref SYSTEMTIME)'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'FormLogin.GetLocalTime(ref SYSTEMTIME)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetLocalTime(POS.SYSTEMTIME&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'FormLogin.SetLocalTime(ref SYSTEMTIME)'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'FormLogin.SetLocalTime(ref SYSTEMTIME)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SyncUser(System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS" File="Program.cs" Line="187">可以在方法 'Program.SyncUser(string, string)' 中多次释放对象 'dlg'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 187</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="POS.Control.Ribbon">
+       <Types>
+        <Type Name="FlashBarButtonItem" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="D:\开发\开发\Pos\POS\Control\Ribbon" File="FlashBarButtonItem.cs" Line="15">'FlashBarButtonItem.FlashBarButtonItem()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;FlashBarButtonItem..ctor()&#xD;&#xA;BarItem.get_Manager():BarManager&#xD;&#xA;BarItem.get_ItemAppearance():BarItemAppearances。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FlashBarButtonItemNew" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="D:\开发\开发\Pos\POS\Control\Ribbon" File="FlashBarButtonItemNew.cs" Line="15">'FlashBarButtonItemNew.FlashBarButtonItemNew()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;FlashBarButtonItemNew..ctor()&#xD;&#xA;BarItem.get_Manager():BarManager&#xD;&#xA;BarItem.get_ItemAppearance():BarItemAppearances。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="POS.Helper">
+       <Types>
+        <Type Name="CashboxHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CloseHandle(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'CashboxHelper.CloseHandle(int)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'CashboxHelper.CloseHandle(int)' 的参数 'hObject' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFile(System.String,System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'CashboxHelper.CreateFile(string, uint, int, int, int, int, int)'。</Issue>
+            </Message>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'CashboxHelper.CreateFile(string, uint, int, int, int, int, int)' 的参数 'lpSecurityAttributes' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="6" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'CashboxHelper.CreateFile(string, uint, int, int, int, int, int)' 的参数 'hTemplateFile' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'CashboxHelper.CreateFile(string, uint, int, int, int, int, int)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GETFONTHEX(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Text.StringBuilder)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'CashboxHelper.GETFONTHEX(string, string, int, int, int, int, int, StringBuilder)'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'CashboxHelper.GETFONTHEX(string, string, int, int, int, int, int, StringBuilder)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'barcodeText' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'fontName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="7" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'returnBarcodeCMD' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteFile(System.Int32,System.Byte[],System.Int32,System.Int32&amp;,POS.Helper.CashboxHelper+OVERLAPPED&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DeclarePInvokesCorrectly" Category="Microsoft.Interoperability" CheckId="CA1415" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="NativeOverlapped" Certainty="95" Level="CriticalError">更改 'CashboxHelper.WriteFile(int, byte[], int, out int, out CashboxHelper.OVERLAPPED)' 的声明，使参数 'lpOverLapped' 是指向 System.Threading.NativeOverlapped 的指针。</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'CashboxHelper.WriteFile(int, byte[], int, out int, out CashboxHelper.OVERLAPPED)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'CashboxHelper.WriteFile(int, byte[], int, out int, out CashboxHelper.OVERLAPPED)' 的参数 'hFile' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="POS.Sale">
+       <Types>
+        <Type Name="FormMain" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnReceipt_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS\Sale" File="FormMain.cs" Line="1753">可以在方法 'FormMain.btnReceipt_Click(object, EventArgs)' 中多次释放对象 'frm'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 1753</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SwitchToThisWindow(System.IntPtr,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'FormMain.SwitchToThisWindow(IntPtr, bool)'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'FormMain.SwitchToThisWindow(IntPtr, bool)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FormMessageCenter" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetVersionInfo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS\Sale" File="FormMessageCenter.cs" Line="165">可以在方法 'FormMessageCenter.GetVersionInfo()' 中多次释放对象 'fs'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 165</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FormReceipt" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnConfirm_Coupon_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS\Sale" File="FormReceipt.cs" Line="1715">可以在方法 'FormReceipt.btnConfirm_Coupon_Click(object, EventArgs)' 中多次释放对象 'dlg'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 1715, 1722, 1730, 1737, 1750, 1772</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="POS.Setting">
+       <Types>
+        <Type Name="FormRunSetting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SyncDepartment()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\开发\开发\Pos\POS\Setting" File="FormRunSetting.cs" Line="116">可以在方法 'FormRunSetting.SyncDepartment()' 中多次释放对象 'dlg'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 116</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="POS.WxPayAPI">
+       <Types>
+        <Type Name="WxPayException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2018-03-16 01:20:58Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Error">将 [Serializable] 添加到 'WxPayException'，原因是此类型实现了 ISerializable。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DeclarePInvokesCorrectly" Category="Microsoft.Interoperability" CheckId="CA1415">
+   <Name>正确声明 P/Invoke</Name>
+   <Description>应正确声明 P/Invoke 方法，以确保运行时行为是正确的。</Description>
+   <Resolution Name="NativeOverlapped">更改 {0} 的声明，使参数 {1} 是指向 System.Threading.NativeOverlapped 的指针。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182204.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>不要在构造函数中调用可重写的方法</Name>
+   <Description>不应通过构造函数调用类中定义的虚方法。如果某个派生类已重写该虚方法，则将在调用派生类的构造函数前，调用此派生类重写后的方法。</Description>
+   <Resolution Name="Default">{0} 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: {1}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>用 SerializableAttribute 标记 ISerializable 类型</Name>
+   <Description>System.Runtime.Serialization.ISerializable 接口允许该类型自定义自身的序列化，而 Serializable 特性使运行时能够将该类型识别为可序列化的类型。</Description>
+   <Resolution Name="Default">将 [Serializable] 添加到 {0}，原因是此类型实现了 ISerializable。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>将 P/Invoke 移动到 NativeMethods 类</Name>
+   <Description>此类型包含具有 DllImport 特性的成员。具有 DllImport 特性的成员应包含在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中。</Description>
+   <Resolution Name="Default">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 {0}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke 声明应为可移植声明</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">如代码中所声明的，P/Invoke {1} 的参数 {0} 在 {3} 平台上的字节宽度将为 {2}。这是不正确的，因为此 API 的实际本机声明表明该参数在 {3} 平台上的字节宽度应为 {4}。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 {5}。</Resolution>
+   <Resolution Name="Return">如代码中所声明的，P/Invoke {0} 的返回类型在 {2} 平台上的字节宽度将为 {1}。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 {2} 平台上的字节宽度应为 {3}。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 {4}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invokes 应该是不可见的</Name>
+   <Description>互操作层不应该是公共的。DllImport 特性不应该应用于可公开访问的成员(公共成员或受保护的成员)。</Description>
+   <Resolution Name="Default">更改 P/Invoke {0} 的可访问性，使它在自己的程序集外部不再是可见的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>指定对 P/Invoke 字符串参数进行封送处理</Name>
+   <Description>在将字符串封送为 ANSI (在 Win9x 上为 Auto)时，某些字符可能会改变。如果启用了最佳匹配映射，则采用 Unicode 编码时显示样式不同的字符串将封送到相同的 ANSI 字符串，这可能会导致错误的安全决策。禁用最佳匹配映射会降低此风险，因为所有没有等效项的字符都将映射到“?”。另外，请注意，CharSet.Ansi 是所有字符串的默认封送设置；Unicode 封送必须显式指定为 DllImport 或 StructLayout 的 CharSet 设置，或者指定为具有 Unicode (或与系统相关的) UnmanagedType 的 MarshalAs 特性。</Description>
+   <Resolution Name="ParameterImplicitAnsi">为了降低安全风险，请将参数 {0} 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 165</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

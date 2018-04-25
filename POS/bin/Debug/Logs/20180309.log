@@ -1,0 +1,377 @@
+2018-03-09 09:43:00,055 [8624] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 09:43:00,114 [8624] DEBUG WxPayApi - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134669908135171993]]></auth_code><body><![CDATA[]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[575621b89852441490b9e55e81d149a5]]></nonce_str><out_trade_no><![CDATA[123113990220180309094300382]]></out_trade_no><sign><![CDATA[784D022053D86374CF1F084FB3BC3201]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>21</total_fee></xml>
+2018-03-09 09:43:01,296 [8624] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[oqg7xWzUdZBIl4hM]]></nonce_str>
+<sign><![CDATA[C464C6AFAD439F10FCF8DCF5EEB8C331]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PARAM_ERROR]]></err_code>
+<err_code_des><![CDATA[body参数格式错误]]></err_code_des>
+</xml>
+2018-03-09 09:43:01,422 [8624] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 09:43:01,423 [8624] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[jt001]]></device_info><err_code><![CDATA[PARAM_ERROR]]></err_code><err_code_des><![CDATA[body参数格式错误]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[oqg7xWzUdZBIl4hM]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[C464C6AFAD439F10FCF8DCF5EEB8C331]]></sign></xml>
+2018-03-09 09:43:01,424 [8624] DEBUG WxPayData - Print in Web Page : appid=wx32665e55bffa086b<br>device_info=jt001<br>err_code=PARAM_ERROR<br>err_code_des=body参数格式错误<br>mch_id=1231139902<br>nonce_str=oqg7xWzUdZBIl4hM<br>result_code=FAIL<br>return_code=SUCCESS<br>return_msg=OK<br>sign=C464C6AFAD439F10FCF8DCF5EEB8C331<br>
+2018-03-09 09:44:09,559 [8624] INFO  WxPayData - MicroPay:Micropay is processing...
+2018-03-09 09:44:13,514 [8624] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134669908135171993]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[77a2440e50a44bf8b763dbe4791bf4bf]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[7C7CD0D81E59347906BF0C8DF423D330]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 09:44:14,058 [8624] DEBUG WxPayData - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[Lzp981CxUvcDrhZQ]]></nonce_str>
+<sign><![CDATA[171997D021B2CA312B31C8D7C65C3DDA]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[USERPAYING]]></err_code>
+<err_code_des><![CDATA[需要用户输入支付密码]]></err_code_des>
+</xml>
+2018-03-09 09:44:23,855 [8624] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 09:44:23,864 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[de83a487abf8478a973eb84b1ef42539]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[8F7C2CAAE68B028FDAC7FF8C19FD83F5]]></sign></xml>
+2018-03-09 09:44:24,260 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[87MHsOQrWUj8xr9Z]]></nonce_str>
+<sign><![CDATA[D6A3E6119F969C4176ACE063EFB72B93]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:26,260 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[54a01ce34fb04cfc918902f0db1f38e9]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[44F9EE1E9702150AD8E0967CA04ADFEC]]></sign></xml>
+2018-03-09 09:44:26,483 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[R3T6B0pzZK6oDS0r]]></nonce_str>
+<sign><![CDATA[50CEAF9E8E7FCDE36E37C02FEC44FA24]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:28,483 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[6a2e332814b2422e9e755ad2a0eb03b6]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[EA944553FB13EA85E49B4DE3069D9701]]></sign></xml>
+2018-03-09 09:44:28,816 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[96XBVzWkp6g3BsB1]]></nonce_str>
+<sign><![CDATA[FB622C339C06633DAE23FBFFA6930B58]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:30,818 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[17251dee8d344c93bc86c824685cfab3]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[CEECD06011A6132CC5A63CA9920A3827]]></sign></xml>
+2018-03-09 09:44:30,992 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[a9tXRKNrgEXu2TuG]]></nonce_str>
+<sign><![CDATA[E717880463199CA92FE521FDCB50A996]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:32,994 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[e3d56786180243ce8a047719e45e6596]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[39D5390C39C158C95013E1851DF44342]]></sign></xml>
+2018-03-09 09:44:33,176 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[4vmZGKrfT6BJOP5W]]></nonce_str>
+<sign><![CDATA[592344CAEBE82486B3711BE13ABB8FE2]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:35,176 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[b622b86844d046d9b5dd46dacb436645]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[7B3624E4E3A7043D3017031E612DFC11]]></sign></xml>
+2018-03-09 09:44:35,416 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[TCi71DXBRf3ycC0Q]]></nonce_str>
+<sign><![CDATA[20E128B90B3EF8FD227C2B60A3069D64]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:37,416 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[4416f7f57f8d444a9ddcf3a84a17f7cd]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[986766F99897949BFC995C150E22612B]]></sign></xml>
+2018-03-09 09:44:37,753 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[ThIzB5UmxZZvTWj8]]></nonce_str>
+<sign><![CDATA[D02FC2BCFF281298A94E861DC38B0289]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:39,754 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[38e894b28b2c4a99bc4b3eac01e3864f]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[69138CC0F0330BB48746ABAEFFD6688A]]></sign></xml>
+2018-03-09 09:44:39,949 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[DkwGqYvIh4T2lRFc]]></nonce_str>
+<sign><![CDATA[51B46E642415D0D836FFD3ACDA07FF7A]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:41,949 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[d59ac745ebbf4a8d993bc82f5274c527]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[769F52F26D2E75EBDEA9453DC028584F]]></sign></xml>
+2018-03-09 09:44:42,169 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[6oEgwiAPQep9iQ1D]]></nonce_str>
+<sign><![CDATA[FBD145BC8FCC29CA782F3C898131DE9A]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:44,169 [8624] DEBUG WxPayData - WxPayApi:OrderQuery request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[1a8568617cd44965befe4fc8b458236c]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[EA2B763C0480689BFF3AB35890335177]]></sign></xml>
+2018-03-09 09:44:44,372 [8624] DEBUG WxPayData - WxPayApi:OrderQuery response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<nonce_str><![CDATA[5cI2KU0AsgSyQvPt]]></nonce_str>
+<sign><![CDATA[45CE81B6AFFC36B98B7E52CD61FB6EF1]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no>
+<trade_state><![CDATA[USERPAYING]]></trade_state>
+<trade_state_desc><![CDATA[需要用户输入支付密码]]></trade_state_desc>
+</xml>
+2018-03-09 09:44:46,372 [8624] ERROR WxPayData - MicroPay:Micropay failure, Reverse order is processing...
+2018-03-09 09:44:46,376 [8624] DEBUG WxPayData - WxPayApi:Reverse request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[59d5e81113c045cba8c18b99bfa0dbe6]]></nonce_str><out_trade_no><![CDATA[123113990220180309094412811]]></out_trade_no><sign><![CDATA[0C71F28A283EA7DBD7221C5AEC6F0B48]]></sign></xml>
+2018-03-09 09:44:46,689 [8624] ERROR WxPayData - HttpService:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 POS.WxPayAPI.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout)
+2018-03-09 09:44:55,029 [8624] INFO  WxPayData - MicroPay:Micropay is processing...
+2018-03-09 09:44:55,030 [8624] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134669908135171993]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[78fe18ea8aac42de9e5f74e406ed8d13]]></nonce_str><out_trade_no><![CDATA[123113990220180309094455633]]></out_trade_no><sign><![CDATA[58527D4D087AE2776945B308596DC91B]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 09:44:55,517 [8624] DEBUG WxPayData - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[wiNmOFbUvJ7CS6jh]]></nonce_str>
+<sign><![CDATA[CAFA8D595D4302F98357AB153ABDFB52]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[AUTH_CODE_INVALID]]></err_code>
+<err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des>
+</xml>
+2018-03-09 09:44:55,913 [8624] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 09:44:55,913 [8624] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[jt001]]></device_info><err_code><![CDATA[AUTH_CODE_INVALID]]></err_code><err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[wiNmOFbUvJ7CS6jh]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[CAFA8D595D4302F98357AB153ABDFB52]]></sign></xml>
+2018-03-09 09:44:55,913 [8624] DEBUG WxPayData - Print in Web Page : appid=wx32665e55bffa086b<br>device_info=jt001<br>err_code=AUTH_CODE_INVALID<br>err_code_des=101 每个二维码仅限使用一次，请刷新再试<br>mch_id=1231139902<br>nonce_str=wiNmOFbUvJ7CS6jh<br>result_code=FAIL<br>return_code=SUCCESS<br>return_msg=OK<br>sign=CAFA8D595D4302F98357AB153ABDFB52<br>
+2018-03-09 09:45:03,586 [8624] INFO  WxPayData - MicroPay:Micropay is processing...
+2018-03-09 09:45:03,587 [8624] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134669908135171993]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[db79ed4fe35c4d6483676a5b3d7e2b17]]></nonce_str><out_trade_no><![CDATA[123113990220180309094503325]]></out_trade_no><sign><![CDATA[D715440FB0C4592AEEA2443B30E6D4CD]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 09:45:04,089 [8624] DEBUG WxPayData - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[dXcJPhP7TMGd9Nyv]]></nonce_str>
+<sign><![CDATA[8068F30344D89F11F4F94039A3D5F471]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[AUTH_CODE_INVALID]]></err_code>
+<err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des>
+</xml>
+2018-03-09 09:45:04,338 [8624] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 09:45:04,338 [8624] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[jt001]]></device_info><err_code><![CDATA[AUTH_CODE_INVALID]]></err_code><err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[dXcJPhP7TMGd9Nyv]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[8068F30344D89F11F4F94039A3D5F471]]></sign></xml>
+2018-03-09 09:45:04,338 [8624] DEBUG WxPayData - Print in Web Page : appid=wx32665e55bffa086b<br>device_info=jt001<br>err_code=AUTH_CODE_INVALID<br>err_code_des=101 每个二维码仅限使用一次，请刷新再试<br>mch_id=1231139902<br>nonce_str=dXcJPhP7TMGd9Nyv<br>result_code=FAIL<br>return_code=SUCCESS<br>return_msg=OK<br>sign=8068F30344D89F11F4F94039A3D5F471<br>
+2018-03-09 09:45:39,352 [8624] INFO  WxPayData - MicroPay:Micropay is processing...
+2018-03-09 09:45:39,352 [8624] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134669908135171993]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[da300049004347168b7937c9ba6e259d]]></nonce_str><out_trade_no><![CDATA[1231139902201803090945392]]></out_trade_no><sign><![CDATA[A1A5F120520B4E8FDBD23611B7095D21]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 09:45:39,869 [8624] DEBUG WxPayData - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[ExdbKcbrlGiqH4mH]]></nonce_str>
+<sign><![CDATA[5770A56CAFBD252FE0AF305277F2DBCA]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[AUTH_CODE_INVALID]]></err_code>
+<err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des>
+</xml>
+2018-03-09 09:45:40,116 [8624] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 09:45:40,116 [8624] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[jt001]]></device_info><err_code><![CDATA[AUTH_CODE_INVALID]]></err_code><err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[ExdbKcbrlGiqH4mH]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[5770A56CAFBD252FE0AF305277F2DBCA]]></sign></xml>
+2018-03-09 09:45:40,116 [8624] DEBUG WxPayData - Print in Web Page : appid=wx32665e55bffa086b<br>device_info=jt001<br>err_code=AUTH_CODE_INVALID<br>err_code_des=101 每个二维码仅限使用一次，请刷新再试<br>mch_id=1231139902<br>nonce_str=ExdbKcbrlGiqH4mH<br>result_code=FAIL<br>return_code=SUCCESS<br>return_msg=OK<br>sign=5770A56CAFBD252FE0AF305277F2DBCA<br>
+2018-03-09 09:45:50,785 [8624] INFO  WxPayData - MicroPay:Micropay is processing...
+2018-03-09 09:45:50,785 [8624] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134669908135171993]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[92c8d48cf5304f5782b55d6cf6bd57d3]]></nonce_str><out_trade_no><![CDATA[123113990220180309094550934]]></out_trade_no><sign><![CDATA[781AF4119BB48EA3FCC791AB1149A4CB]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 09:45:51,339 [8624] DEBUG WxPayData - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[qV9YA8EZtlkK8JtJ]]></nonce_str>
+<sign><![CDATA[FD815033570BDC32A09F025994F0EC8D]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[AUTH_CODE_INVALID]]></err_code>
+<err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des>
+</xml>
+2018-03-09 09:45:51,485 [8624] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 09:45:51,485 [8624] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[jt001]]></device_info><err_code><![CDATA[AUTH_CODE_INVALID]]></err_code><err_code_des><![CDATA[101 每个二维码仅限使用一次，请刷新再试]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[qV9YA8EZtlkK8JtJ]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[FD815033570BDC32A09F025994F0EC8D]]></sign></xml>
+2018-03-09 09:45:51,485 [8624] DEBUG WxPayData - Print in Web Page : appid=wx32665e55bffa086b<br>device_info=jt001<br>err_code=AUTH_CODE_INVALID<br>err_code_des=101 每个二维码仅限使用一次，请刷新再试<br>mch_id=1231139902<br>nonce_str=qV9YA8EZtlkK8JtJ<br>result_code=FAIL<br>return_code=SUCCESS<br>return_msg=OK<br>sign=FD815033570BDC32A09F025994F0EC8D<br>
+2018-03-09 09:59:16,993 [11668] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 09:59:17,104 [11668] DEBUG WxPayApi - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134713364576725171]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[jt001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[22a1dc991fcb4cb2b83a110f315dd744]]></nonce_str><out_trade_no><![CDATA[123113990220180309095917763]]></out_trade_no><sign><![CDATA[C41D34C2061C2CE35A19517D9C484FFA]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 09:59:19,752 [11668] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[jt001]]></device_info>
+<nonce_str><![CDATA[22a1dc991fcb4cb2b83a110f315dd744]]></nonce_str>
+<sign><![CDATA[CAB173BDD0BA15270855221034207934]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<trade_type><![CDATA[MICROPAY]]></trade_type>
+<bank_type><![CDATA[CFT]]></bank_type>
+<total_fee>1</total_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<transaction_id><![CDATA[4200000067201803095328434797]]></transaction_id>
+<out_trade_no><![CDATA[123113990220180309095917763]]></out_trade_no>
+<attach><![CDATA[]]></attach>
+<time_end><![CDATA[20180309095915]]></time_end>
+<cash_fee>1</cash_fee>
+<cash_fee_type><![CDATA[CNY]]></cash_fee_type>
+</xml>
+2018-03-09 09:59:56,310 [11668] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 10:00:57,580 [11668] DEBUG WxPayData - MicroPay:Micropay business success, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><attach><![CDATA[]]></attach><bank_type><![CDATA[CFT]]></bank_type><cash_fee><![CDATA[1]]></cash_fee><cash_fee_type><![CDATA[CNY]]></cash_fee_type><device_info><![CDATA[jt001]]></device_info><fee_type><![CDATA[CNY]]></fee_type><is_subscribe><![CDATA[N]]></is_subscribe><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[22a1dc991fcb4cb2b83a110f315dd744]]></nonce_str><openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid><out_trade_no><![CDATA[123113990220180309095917763]]></out_trade_no><result_code><![CDATA[SUCCESS]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[CAB173BDD0BA15270855221034207934]]></sign><time_end><![CDATA[20180309095915]]></time_end><total_fee><![CDATA[1]]></total_fee><trade_type><![CDATA[MICROPAY]]></trade_type><transaction_id><![CDATA[4200000067201803095328434797]]></transaction_id></xml>
+2018-03-09 10:00:58,829 [11668] DEBUG WxPayData - Print in Web Page : appid=wx32665e55bffa086b<br>attach=<br>bank_type=CFT<br>cash_fee=1<br>cash_fee_type=CNY<br>device_info=jt001<br>fee_type=CNY<br>is_subscribe=N<br>mch_id=1231139902<br>nonce_str=22a1dc991fcb4cb2b83a110f315dd744<br>openid=o3DKGt1QBnWNav8U3L36c9fvR73A<br>out_trade_no=123113990220180309095917763<br>result_code=SUCCESS<br>return_code=SUCCESS<br>return_msg=OK<br>sign=CAB173BDD0BA15270855221034207934<br>time_end=20180309095915<br>total_fee=1<br>trade_type=MICROPAY<br>transaction_id=4200000067201803095328434797<br>
+2018-03-09 10:19:35,657 [8988] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 14:23:46,151 [11584] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 14:23:48,624 [11584] DEBUG WxPayApi - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134767108023944519]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[juntao001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[107afb3233384c2f91201929f3056a18]]></nonce_str><out_trade_no><![CDATA[123113990220180309142346214]]></out_trade_no><sign><![CDATA[3AC52A0D0BF97160170FD19214A0D58C]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>0</total_fee></xml>
+2018-03-09 14:23:49,435 [11584] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[juntao001]]></device_info>
+<nonce_str><![CDATA[RQj7PaIe70xoOisB]]></nonce_str>
+<sign><![CDATA[528A07BAFDB3875BDE99672820B5BFD2]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PARAM_ERROR]]></err_code>
+<err_code_des><![CDATA[total_fee参数格式错误]]></err_code_des>
+</xml>
+2018-03-09 14:24:05,296 [11584] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 14:24:05,299 [11584] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[juntao001]]></device_info><err_code><![CDATA[PARAM_ERROR]]></err_code><err_code_des><![CDATA[total_fee参数格式错误]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[RQj7PaIe70xoOisB]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[528A07BAFDB3875BDE99672820B5BFD2]]></sign></xml>
+2018-03-09 14:24:23,743 [11584] INFO  WxPayData - ****************************异常文本****************************
+【出现时间】：2018-03-09 14:24:23
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 POS.Sale.FormAlipay.PPayTo()
+   在 POS.Sale.FormAlipay.txtBarCode_KeyDown(Object sender, KeyEventArgs e)
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+2018-03-09 14:24:24,739 [11584] INFO  WxPayData - 验证失败
+2018-03-09 14:27:21,083 [15328] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 14:27:21,155 [15328] DEBUG WxPayApi - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134611327648919182]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[juntao001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[5db5b97bd4f1417b80a9120fe8617802]]></nonce_str><out_trade_no><![CDATA[12311399022018030914272171]]></out_trade_no><sign><![CDATA[8DACB841E64F98950FBEEB76DD16C9E7]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>0</total_fee></xml>
+2018-03-09 14:27:21,983 [15328] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[juntao001]]></device_info>
+<nonce_str><![CDATA[n5vXfyDjSjlT9cd1]]></nonce_str>
+<sign><![CDATA[2FC95D9D07EFFFE43A71425413F7F1DD]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PARAM_ERROR]]></err_code>
+<err_code_des><![CDATA[total_fee参数格式错误]]></err_code_des>
+</xml>
+2018-03-09 14:27:22,276 [15328] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 14:27:22,278 [15328] ERROR WxPayData - MicroPay:micropay API interface call success, business failure, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><device_info><![CDATA[juntao001]]></device_info><err_code><![CDATA[PARAM_ERROR]]></err_code><err_code_des><![CDATA[total_fee参数格式错误]]></err_code_des><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[n5vXfyDjSjlT9cd1]]></nonce_str><result_code><![CDATA[FAIL]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[2FC95D9D07EFFFE43A71425413F7F1DD]]></sign></xml>
+2018-03-09 14:30:59,166 [13884] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 14:30:59,248 [13884] DEBUG WxPayApi - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134737656280052409]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[juntao001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[de8e2c89396144d08e4021dbc130afe0]]></nonce_str><out_trade_no><![CDATA[123113990220180309143059644]]></out_trade_no><sign><![CDATA[4BD21C15170CDEFA31D4AACAFDE92B04]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 14:31:06,319 [13884] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[juntao001]]></device_info>
+<nonce_str><![CDATA[de8e2c89396144d08e4021dbc130afe0]]></nonce_str>
+<sign><![CDATA[08D8196E92FA6D232905AB4C43D18300]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<trade_type><![CDATA[MICROPAY]]></trade_type>
+<bank_type><![CDATA[CFT]]></bank_type>
+<total_fee>1</total_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<transaction_id><![CDATA[4200000058201803095516856712]]></transaction_id>
+<out_trade_no><![CDATA[123113990220180309143059644]]></out_trade_no>
+<attach><![CDATA[]]></attach>
+<time_end><![CDATA[20180309143101]]></time_end>
+<cash_fee>1</cash_fee>
+<cash_fee_type><![CDATA[CNY]]></cash_fee_type>
+</xml>
+2018-03-09 14:31:06,338 [13884] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 14:31:06,338 [13884] DEBUG WxPayData - MicroPay:Micropay business success, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><attach><![CDATA[]]></attach><bank_type><![CDATA[CFT]]></bank_type><cash_fee><![CDATA[1]]></cash_fee><cash_fee_type><![CDATA[CNY]]></cash_fee_type><device_info><![CDATA[juntao001]]></device_info><fee_type><![CDATA[CNY]]></fee_type><is_subscribe><![CDATA[N]]></is_subscribe><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[de8e2c89396144d08e4021dbc130afe0]]></nonce_str><openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid><out_trade_no><![CDATA[123113990220180309143059644]]></out_trade_no><result_code><![CDATA[SUCCESS]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[08D8196E92FA6D232905AB4C43D18300]]></sign><time_end><![CDATA[20180309143101]]></time_end><total_fee><![CDATA[1]]></total_fee><trade_type><![CDATA[MICROPAY]]></trade_type><transaction_id><![CDATA[4200000058201803095516856712]]></transaction_id></xml>
+2018-03-09 14:45:21,090 [11552] INFO  FormLogin - 请求被中止: 操作超时。
+2018-03-09 14:45:21,090 [8148] INFO  FormLogin - 请求被中止: 操作超时。
+2018-03-09 14:45:34,593 [8828] INFO  FormLogin - 请求被中止: 操作超时。
+2018-03-09 14:46:53,755 [12652] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 14:46:53,773 [12652] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134667813175630957]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[juntao001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[7c90b1e71d75417eb631b489c1b32087]]></nonce_str><out_trade_no><![CDATA[123113990220180309144653622]]></out_trade_no><sign><![CDATA[58A1E9BA50729742D63828437D03D103]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 14:46:56,144 [12652] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[juntao001]]></device_info>
+<nonce_str><![CDATA[7c90b1e71d75417eb631b489c1b32087]]></nonce_str>
+<sign><![CDATA[E418D242578B0A58067A9E75E96C4ED5]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<trade_type><![CDATA[MICROPAY]]></trade_type>
+<bank_type><![CDATA[CFT]]></bank_type>
+<total_fee>1</total_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<transaction_id><![CDATA[4200000073201803095446063476]]></transaction_id>
+<out_trade_no><![CDATA[123113990220180309144653622]]></out_trade_no>
+<attach><![CDATA[]]></attach>
+<time_end><![CDATA[20180309144651]]></time_end>
+<cash_fee>1</cash_fee>
+<cash_fee_type><![CDATA[CNY]]></cash_fee_type>
+</xml>
+2018-03-09 14:46:56,178 [12652] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 14:46:56,178 [12652] DEBUG WxPayData - MicroPay:Micropay business success, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><attach><![CDATA[]]></attach><bank_type><![CDATA[CFT]]></bank_type><cash_fee><![CDATA[1]]></cash_fee><cash_fee_type><![CDATA[CNY]]></cash_fee_type><device_info><![CDATA[juntao001]]></device_info><fee_type><![CDATA[CNY]]></fee_type><is_subscribe><![CDATA[N]]></is_subscribe><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[7c90b1e71d75417eb631b489c1b32087]]></nonce_str><openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid><out_trade_no><![CDATA[123113990220180309144653622]]></out_trade_no><result_code><![CDATA[SUCCESS]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[E418D242578B0A58067A9E75E96C4ED5]]></sign><time_end><![CDATA[20180309144651]]></time_end><total_fee><![CDATA[1]]></total_fee><trade_type><![CDATA[MICROPAY]]></trade_type><transaction_id><![CDATA[4200000073201803095446063476]]></transaction_id></xml>
+2018-03-09 14:52:33,009 [15800] INFO  MicroPay - MicroPay:Micropay is processing...
+2018-03-09 14:52:33,064 [15800] DEBUG WxPayData - WxPayApi:MicroPay request : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><auth_code><![CDATA[134537953063083503]]></auth_code><body><![CDATA[刷卡支付]]></body><device_info><![CDATA[juntao001]]></device_info><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[98ef078ed0784520a6cf2b8d7f72a04b]]></nonce_str><out_trade_no><![CDATA[123113990220180309145233576]]></out_trade_no><sign><![CDATA[618387EF0132A648B9E67B46F0865AB7]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><total_fee>1</total_fee></xml>
+2018-03-09 14:52:35,184 [15800] DEBUG HttpService - WxPayApi:MicroPay response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx32665e55bffa086b]]></appid>
+<mch_id><![CDATA[1231139902]]></mch_id>
+<device_info><![CDATA[juntao001]]></device_info>
+<nonce_str><![CDATA[98ef078ed0784520a6cf2b8d7f72a04b]]></nonce_str>
+<sign><![CDATA[BECC86EB3AF18C2F4DBF4F873241DC40]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<trade_type><![CDATA[MICROPAY]]></trade_type>
+<bank_type><![CDATA[CFT]]></bank_type>
+<total_fee>1</total_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<transaction_id><![CDATA[4200000063201803095514826494]]></transaction_id>
+<out_trade_no><![CDATA[123113990220180309145233576]]></out_trade_no>
+<attach><![CDATA[]]></attach>
+<time_end><![CDATA[20180309145230]]></time_end>
+<cash_fee>1</cash_fee>
+<cash_fee_type><![CDATA[CNY]]></cash_fee_type>
+</xml>
+2018-03-09 14:52:35,200 [15800] DEBUG WxPayData - MicroPay:Micropay response check sign success
+2018-03-09 14:52:35,200 [15800] DEBUG WxPayData - MicroPay:Micropay business success, result : <xml><appid><![CDATA[wx32665e55bffa086b]]></appid><attach><![CDATA[]]></attach><bank_type><![CDATA[CFT]]></bank_type><cash_fee><![CDATA[1]]></cash_fee><cash_fee_type><![CDATA[CNY]]></cash_fee_type><device_info><![CDATA[juntao001]]></device_info><fee_type><![CDATA[CNY]]></fee_type><is_subscribe><![CDATA[N]]></is_subscribe><mch_id><![CDATA[1231139902]]></mch_id><nonce_str><![CDATA[98ef078ed0784520a6cf2b8d7f72a04b]]></nonce_str><openid><![CDATA[o3DKGt1QBnWNav8U3L36c9fvR73A]]></openid><out_trade_no><![CDATA[123113990220180309145233576]]></out_trade_no><result_code><![CDATA[SUCCESS]]></result_code><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><sign><![CDATA[BECC86EB3AF18C2F4DBF4F873241DC40]]></sign><time_end><![CDATA[20180309145230]]></time_end><total_fee><![CDATA[1]]></total_fee><trade_type><![CDATA[MICROPAY]]></trade_type><transaction_id><![CDATA[4200000063201803095514826494]]></transaction_id></xml>
+2018-03-09 15:05:06,448 [14808] INFO  WxPayData - 请求被中止: 操作超时。
+2018-03-09 15:05:06,534 [15740] INFO  WxPayData - 请求被中止: 操作超时。
+2018-03-09 15:07:05,079 [10120] INFO  WxPayData - 无法连接到远程服务器
+2018-03-09 15:07:28,085 [6656] INFO  WxPayData - 无法连接到远程服务器
+2018-03-09 15:07:53,710 [10120] INFO  WxPayData - 无法连接到远程服务器
+2018-03-09 15:08:01,865 [10120] INFO  WxPayData - 无法连接到远程服务器
+2018-03-09 15:09:08,082 [6656] INFO  WxPayData - 无法连接到远程服务器
+2018-03-09 16:10:24,480 [5156] INFO  WxPayData - 请求被中止: 操作超时。
+2018-03-09 16:21:25,745 [12044] INFO  WxPayData - 请求被中止: 操作超时。
+2018-03-09 16:21:25,884 [5196] INFO  WxPayData - 请求被中止: 操作超时。

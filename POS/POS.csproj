@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E84BA751-048D-44A4-848B-21086FA69F05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\开发\test\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AopSdk, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AopSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="F2FPayDll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\F2FPayDll.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alipay\AlipayConfig.cs" />
+    <Compile Include="Alipay\AlipayRefund.cs" />
+    <Compile Include="Alipay\BarcodePay.cs" />
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientAdd.Designer.cs">
+      <DependentUpon>FormClientAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientExchange.Designer.cs">
+      <DependentUpon>FormClientExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientStatistics.Designer.cs">
+      <DependentUpon>FormClientStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientQuery.Designer.cs">
+      <DependentUpon>FormClientQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientRecharge.Designer.cs">
+      <DependentUpon>FormClientRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientUpdate.Designer.cs">
+      <DependentUpon>FormClientUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientDetail.Designer.cs">
+      <DependentUpon>FormClientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientSearch.Designer.cs">
+      <DependentUpon>FormClientSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClinetConsumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClinetConsumption.Designer.cs">
+      <DependentUpon>FormClinetConsumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClientExchangeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClientExchangeQuery.Designer.cs">
+      <DependentUpon>FormClientExchangeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClntRepaymentsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormClntRepaymentsReport.Designer.cs">
+      <DependentUpon>FormClntRepaymentsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\DBMapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\DBMapControl.Designer.cs">
+      <DependentUpon>DBMapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\DiscountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\DiscountControl.Designer.cs">
+      <DependentUpon>DiscountControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Ribbon\Drawing\XRibbonCaptionPainter.cs" />
+    <Compile Include="Control\Ribbon\FlashBarButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Ribbon\FlashBarButtonItemNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Ribbon\ViewInfo\XRibbonCaptionViewInfo.cs" />
+    <Compile Include="Control\Ribbon\ViewInfo\XRibbonPageHeaderViewInfo.cs" />
+    <Compile Include="Control\Ribbon\ViewInfo\XRibbonViewInfo.cs" />
+    <Compile Include="Control\Ribbon\XRibbonBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Ribbon\XRibbonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Ribbon\XRibbonControl.Designer.cs">
+      <DependentUpon>XRibbonControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDownloadProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDownloadProgress.Designer.cs">
+      <DependentUpon>FormDownloadProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLock.Designer.cs">
+      <DependentUpon>FormLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSplashScreen.Designer.cs">
+      <DependentUpon>FormSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\FormFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\FormFunction.Designer.cs">
+      <DependentUpon>FormFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\FormStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\FormStock.Designer.cs">
+      <DependentUpon>FormStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ApplicationHelper.cs" />
+    <Compile Include="Helper\CalcEraseAmountHelper.cs" />
+    <Compile Include="Helper\CashboxHelper.cs" />
+    <Compile Include="Helper\ClientCodeHelper.cs" />
+    <Compile Include="Helper\CloneEntityHelper.cs" />
+    <Compile Include="Helper\CustomerDisplayHelper.cs" />
+    <Compile Include="Helper\CustomGridLocalizer.cs" />
+    <Compile Include="Helper\CustomXtraEditorsLocalizer.cs" />
+    <Compile Include="Helper\MessagePopup.cs" />
+    <Compile Include="Helper\PrintClientRechargeHelper.cs" />
+    <Compile Include="Helper\PrintPosBanHelper.cs" />
+    <Compile Include="Helper\PrintPaymentVoucherHelper.cs" />
+    <Compile Include="Helper\PrintSaleDayReportHelper.cs" />
+    <Compile Include="Helper\PrintHelper.cs" />
+    <Compile Include="HotKey.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>HotKey.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Pending\FormPendingMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pending\FormPendingMes.Designer.cs">
+      <DependentUpon>FormPendingMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuntimeObject.cs" />
+    <Compile Include="Sale\FormAlipay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormAlipay.Designer.cs">
+      <DependentUpon>FormAlipay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormAlipayConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormAlipayConfirm.Designer.cs">
+      <DependentUpon>FormAlipayConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormChangeConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormChangeConfirm.Designer.cs">
+      <DependentUpon>FormChangeConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormMain.designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormInvalidMse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormInvalidMse.Designer.cs">
+      <DependentUpon>FormInvalidMse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormPopup.Designer.cs">
+      <DependentUpon>FormPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormPOSDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormPOSDetail.Designer.cs">
+      <DependentUpon>FormPOSDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormProductQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormProductQuery.Designer.cs">
+      <DependentUpon>FormProductQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormReceipt.Designer.cs">
+      <DependentUpon>FormReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormPOS.Designer.cs">
+      <DependentUpon>FormPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pending\FormPendingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pending\FormPendingOrder.Designer.cs">
+      <DependentUpon>FormPendingOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWait.Designer.cs">
+      <DependentUpon>FormWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormPOSQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormPOSQuery.Designer.cs">
+      <DependentUpon>FormPOSQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormDepositConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormDepositConfirm.Designer.cs">
+      <DependentUpon>FormDepositConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormMultiUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormMultiUnit.Designer.cs">
+      <DependentUpon>FormMultiUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormRefund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormRefund.Designer.cs">
+      <DependentUpon>FormRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormReturnJF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormReturnJF.Designer.cs">
+      <DependentUpon>FormReturnJF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormReturnedMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormReturnedMes.Designer.cs">
+      <DependentUpon>FormReturnedMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormReturned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormReturned.Designer.cs">
+      <DependentUpon>FormReturned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormSaleDayReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormSaleDayReport.Designer.cs">
+      <DependentUpon>FormSaleDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormMessageCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormMessageCenter.Designer.cs">
+      <DependentUpon>FormMessageCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormSaleDetailReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormSaleDetailReport.Designer.cs">
+      <DependentUpon>FormSaleDetailReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FormSaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FormSaleReport.Designer.cs">
+      <DependentUpon>FormSaleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FormDBMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FormDBMap.Designer.cs">
+      <DependentUpon>FormDBMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FormRunSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FormRunSetting.Designer.cs">
+      <DependentUpon>FormRunSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FormServerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FormServerSetting.Designer.cs">
+      <DependentUpon>FormServerSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shifts\FormBegin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shifts\FormBegin.Designer.cs">
+      <DependentUpon>FormBegin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shifts\FormSaleDayMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shifts\FormSaleDayMes.Designer.cs">
+      <DependentUpon>FormSaleDayMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shifts\FormPosBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shifts\FormPosBan.Designer.cs">
+      <DependentUpon>FormPosBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMTIME.cs" />
+    <Compile Include="WxPayAPI\FormWxPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WxPayAPI\FormWxPay.Designer.cs">
+      <DependentUpon>FormWxPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WxPayAPI\HttpService.cs" />
+    <Compile Include="WxPayAPI\MicroPay.cs" />
+    <Compile Include="WxPayAPI\Refund.cs" />
+    <Compile Include="WxPayAPI\WxPayApi.cs" />
+    <Compile Include="WxPayAPI\WxPayConfig.cs" />
+    <Compile Include="WxPayAPI\WxPayData.cs" />
+    <Compile Include="WxPayAPI\WxPayException.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientAdd.resx">
+      <DependentUpon>FormClientAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientExchange.resx">
+      <DependentUpon>FormClientExchange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientStatistics.resx">
+      <DependentUpon>FormClientStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientQuery.resx">
+      <DependentUpon>FormClientQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientRecharge.resx">
+      <DependentUpon>FormClientRecharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientUpdate.resx">
+      <DependentUpon>FormClientUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientDetail.resx">
+      <DependentUpon>FormClientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientSearch.resx">
+      <DependentUpon>FormClientSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClinetConsumption.resx">
+      <DependentUpon>FormClinetConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClientExchangeQuery.resx">
+      <DependentUpon>FormClientExchangeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClntRepaymentsReport.resx">
+      <DependentUpon>FormClntRepaymentsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\DBMapControl.resx">
+      <DependentUpon>DBMapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\DiscountControl.resx">
+      <DependentUpon>DiscountControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDownloadProgress.resx">
+      <DependentUpon>FormDownloadProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLock.resx">
+      <DependentUpon>FormLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.en-IE.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.en.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSplashScreen.resx">
+      <DependentUpon>FormSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\FormFunction.resx">
+      <DependentUpon>FormFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\FormStock.resx">
+      <DependentUpon>FormStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pending\FormPendingMes.resx">
+      <DependentUpon>FormPendingMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormAlipay.resx">
+      <DependentUpon>FormAlipay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormAlipayConfirm.resx">
+      <DependentUpon>FormAlipayConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormChangeConfirm.resx">
+      <DependentUpon>FormChangeConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormInvalidMse.resx">
+      <DependentUpon>FormInvalidMse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormPopup.resx">
+      <DependentUpon>FormPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormPOSDetail.resx">
+      <DependentUpon>FormPOSDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormProductQuery.resx">
+      <DependentUpon>FormProductQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormReceipt.resx">
+      <DependentUpon>FormReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormPOS.resx">
+      <DependentUpon>FormPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pending\FormPendingOrder.resx">
+      <DependentUpon>FormPendingOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormWait.resx">
+      <DependentUpon>FormWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormPOSQuery.resx">
+      <DependentUpon>FormPOSQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormDepositConfirm.resx">
+      <DependentUpon>FormDepositConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormMultiUnit.resx">
+      <DependentUpon>FormMultiUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormRefund.resx">
+      <DependentUpon>FormRefund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormReturnJF.resx">
+      <DependentUpon>FormReturnJF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormReturnedMes.resx">
+      <DependentUpon>FormReturnedMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormReturned.resx">
+      <DependentUpon>FormReturned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormSaleDayReport.resx">
+      <DependentUpon>FormSaleDayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormMessageCenter.resx">
+      <DependentUpon>FormMessageCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormSaleDetailReport.resx">
+      <DependentUpon>FormSaleDetailReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FormSaleReport.resx">
+      <DependentUpon>FormSaleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FormDBMap.resx">
+      <DependentUpon>FormDBMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FormRunSetting.resx">
+      <DependentUpon>FormRunSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FormServerSetting.resx">
+      <DependentUpon>FormServerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shifts\FormBegin.resx">
+      <DependentUpon>FormBegin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shifts\FormSaleDayMes.resx">
+      <DependentUpon>FormSaleDayMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shifts\FormPosBan.resx">
+      <DependentUpon>FormPosBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="cert\apiclient_cert.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="WxPayAPI\FormWxPay.resx">
+      <DependentUpon>FormWxPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HotKey.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>HotKey.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="image\cloud.png" />
+    <Content Include="image\logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\AopSdk.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\F2FPayDll.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\LitJson.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="report\58mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="report\80mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="report\交接班58mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="report\交接班80mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="report\会员充值58mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="report\会员充值80mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="report\营业款缴交凭证.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="report\销售日结58mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="report\销售日结80mm.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POS.BLL\POS.BLL.csproj">
+      <Project>{09b2a2ff-2ee4-4741-8382-341721e93412}</Project>
+      <Name>POS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.Common\POS.Common.csproj">
+      <Project>{88f279db-b77d-461c-9105-9ab5e836d79d}</Project>
+      <Name>POS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.DAL\POS.DAL.csproj">
+      <Project>{E430CF0A-C109-4F1E-9849-DE480CF6B8BE}</Project>
+      <Name>POS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.Model\POS.Model.csproj">
+      <Project>{BC6ABB08-7C6E-46E1-808D-1C50BE653FF9}</Project>
+      <Name>POS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\log4net.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\log4net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico" />
+    <Content Include="Pos.db3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="version.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="localdbStruct\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

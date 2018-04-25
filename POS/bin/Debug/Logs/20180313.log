@@ -1,0 +1,30 @@
+2018-03-13 11:20:03,026 [11052] DEBUG FormAlipay - 您使用的私钥格式错误，请检查RSA私钥配置,charset = utf-8
+2018-03-13 13:40:59,602 [11900] DEBUG FormAlipay - sign check fail: check Sign and Data Fail!
+2018-03-13 14:02:48,925 [11460] DEBUG FormAlipay - 您使用的私钥格式错误，请检查RSA私钥配置,charset = utf-8
+2018-03-13 14:13:06,970 [7284] DEBUG FormAlipay - 您使用的私钥格式错误，请检查RSA私钥配置,charset = utf-8
+2018-03-13 14:28:26,585 [8324] INFO  FormAlipay - 无法连接到远程服务器
+2018-03-13 15:44:42,453 [10128] INFO  FormLogin - 验证失败
+2018-03-13 15:44:42,613 [10128] INFO  FormLogin - 未将对象引用设置到对象的实例。
+2018-03-13 15:47:09,317 [10128] INFO  FormLogin - 验证失败
+2018-03-13 15:47:10,583 [8020] INFO  FormLogin - 验证失败
+2018-03-13 15:47:11,405 [10128] INFO  FormLogin - 验证失败
+2018-03-13 15:47:12,366 [8992] INFO  FormLogin - 验证失败
+2018-03-13 15:47:12,965 [6884] INFO  FormLogin - 验证失败
+2018-03-13 15:47:13,728 [10128] INFO  FormLogin - 验证失败
+2018-03-13 15:47:21,645 [8992] INFO  FormLogin - 验证失败
+2018-03-13 15:47:22,810 [8992] INFO  FormLogin - 验证失败
+2018-03-13 15:47:23,801 [8020] INFO  FormLogin - 验证失败
+2018-03-13 15:47:24,427 [8992] INFO  FormLogin - 验证失败
+2018-03-13 15:48:00,913 [8992] INFO  FormLogin - 验证失败
+2018-03-13 15:57:17,398 [10008] INFO  FormLogin - 验证失败
+2018-03-13 15:58:15,032 [12256] INFO  FormLogin - 验证失败
+2018-03-13 16:04:13,622 [11652] INFO  FormLogin - 验证失败
+2018-03-13 16:04:29,110 [11652] INFO  FormLogin - 验证失败
+2018-03-13 16:04:46,846 [1116] INFO  FormLogin - 验证失败
+2018-03-13 16:05:06,685 [10140] INFO  FormLogin - 验证失败
+2018-03-13 16:08:19,551 [10140] INFO  FormLogin - 验证失败
+2018-03-13 17:32:36,159 [14316] DEBUG FormAlipay - {"alipay_trade_pay_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.INVALID_RECEIVE_ACCOUNT","sub_msg":"支付失败，当前收款账户不在设置的收款账户列表中，请联系管理员处理，建议顾客使用其他方式付款。[INVALID_RECEIVE_ACCOUNT]","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"2018031317323500005172","point_amount":"0.00","receipt_amount":"0.00"},"sign":"fRjIZskvLx2LzBMxC9PZCd6SXPZu2xpUyMHUrvZM56RKSyMQaOQY8BOikHYCNC0D54SlZAmEi9dlV+n6V9gpRqo8MU0WUztluw1jtmjifmEWiI+3AWi4+xtz+rj1gsy7HksX1oIsGypDsfiKV8LysHXXkVII/9c2k6SqTh/22x+BLw0e5ROEMsS8tKNhePFwH8++jXVJG717N29COUQMtJMzSVmmyTyR9Eqgf4GGzqVsPzmqMavQsWR+AaZC37LLBKKhgetOCfGXoOpmDTbisbJtGTXKaYKfKj3YGZyrr6gjxA//bIohBrZbpCrVvJzkumVSzGJZ/lzN+J3u/s1pfA=="}
+2018-03-13 17:41:17,206 [11204] DEBUG FormAlipay - {"alipay_trade_pay_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.SELLER_NOT_EXIST","sub_msg":"支付失败，本商户账号异常，请联系管理员处理，建议顾客使用其他方式付款。[SELLER_NOT_EXIST]","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"2018031317411600002081","point_amount":"0.00","receipt_amount":"0.00"},"sign":"rk/nzyXc8wcyn4RaTAehkEiO7CdXJXSP8HCBrMuEPzzzjdcS2rpIGmggRozb7fx3nm1sLm7Hl4Bz+EcGzCfpB9oP8NRBDfOdLSZZZWpz06dWZRa/Fq7qgz/P2Z38354RLU8y1WpEzYShzChkVFHumOCSF4u3Cd/Xy46Nd03TZXcFtMgfeusYcY+qSJoKN9e4AxDUR2D2nIZxPOohvMhf2hpu8B0yfef3gUX43a75X3YpWqxlEkUn2Pw+0xEt5CAIgXTAkn6CNglyMq9xGm4s/g3ZP5sO4aXueQU/6jqf4YmdEOS68m7TBL0K/C/McOZJCRWUUgQLMAPUwAuipXqXNA=="}
+2018-03-13 17:44:56,578 [11204] DEBUG FormAlipay - {"alipay_trade_pay_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.SELLER_NOT_EXIST","sub_msg":"支付失败，本商户账号异常，请联系管理员处理，建议顾客使用其他方式付款。[SELLER_NOT_EXIST]","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"2018031317445600004823","point_amount":"0.00","receipt_amount":"0.00"},"sign":"Ing+2FCN5VIFe3L8HUMltfqXtEUHIDkG9P9sYTPPPRYdf0xhWGhtJ15KPotPRrZ1CTYAp0kqzlYtr6E+oiMTPOjc/lDLXAcFqNXcPVM4/CHQfTgpCXvyfJdb90wO43ol2b3NZ0yP9VBNHI+9UfHnePehh1KD9e4zVzaR/kuFRovyR6LKL8odYcOnnhUbUQEZMwqYvZvOSbSY85+sqpHhmN+wvEXKoMLRmUAKcu6awoFArVaXjRVb362Il8FpU63v8xbh07rdZS61Sw2L+7P60WAe6IJz5GGJLBAbEqWT+96fm/x4ef82GrXv23OdYev3t2l9/R7QW7vTApWyrb5xBQ=="}
+2018-03-13 17:47:01,321 [11568] DEBUG FormAlipay - {"alipay_trade_pay_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.INVALID_RECEIVE_ACCOUNT","sub_msg":"支付失败，当前收款账户不在设置的收款账户列表中，请联系管理员处理，建议顾客使用其他方式付款。[INVALID_RECEIVE_ACCOUNT]","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"2018031317470000008333","point_amount":"0.00","receipt_amount":"0.00"},"sign":"Socd0IfAEKb62NhPClgtytFpr6ww/26S2YXV+RdVudCjuKrl/5TNNfKc5RcDNIUKCwskV1piXrUeBYEzvoHYQGNTLnLDVkVi38gTNvERzfJFWYlvOSpfYndGmJtweS8sewySqOdHhiKDNTIgmJjc/ykjAgsfcPRn4ZjSBEZxAmMM/L6FgFZhHB6hZW1pW2YBZ8hKSpc9SuJPpAgoob64+eSW7MdwFYRs3YF2TquidJIHj9p4epWpdBOp8yvCq/UPLFmwi6V/VNTLgBdzS9PNAf52EkqkXxqqB//oIxbc4RY6xXAwrp+b4i57sAeEOaQ5hijUjYaMEK7okdnb2t/yfg=="}
+2018-03-13 17:48:37,588 [11568] DEBUG FormAlipay - {"alipay_trade_pay_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.INVALID_RECEIVE_ACCOUNT","sub_msg":"支付失败，当前收款账户不在设置的收款账户列表中，请联系管理员处理，建议顾客使用其他方式付款。[INVALID_RECEIVE_ACCOUNT]","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"2018031317474300002316","point_amount":"0.00","receipt_amount":"0.00"},"sign":"EyHSPhui91bViaXdKyUfS43YUjRzyWEJJCAL7lOgXQnSK73ll2YP3LQ0qbhHXBL8kXFxZo7nAKSLfwXl33ufCgIWQu1i2+zAeDu2AaqoVJA5oWyjhWVFO2MkQhD6pfb3FNwQ4bR7C5QZKicaOL610crqnQPgt9esO4XVrTHarGed+ZJ1VOMGpYA46ZazUK2F7CscmeCdrJm/8KxXTyOifCA3Bv+fDd7smPywqNqfD5LKkIOx/rYeBLRKjbhlDI+ZPbPlgE3FlAh16tsH+A7sHUGcTQUq+XRPDH6cZdkZM7ql792CJO2UTR4pEJMPBoY+V6KekNXNPQ3Umk/f4NoAqQ=="}

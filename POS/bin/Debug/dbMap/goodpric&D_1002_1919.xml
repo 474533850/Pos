@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDBRelation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DBRelation>
+    <LColumn>SID</LColumn>
+    <LCaption>原数据ID</LCaption>
+    <SColumn>XTABLEID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xpric</LColumn>
+    <LCaption>价格</LCaption>
+    <SColumn>XSUBID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind1</LColumn>
+    <LCaption>规格1</LCaption>
+    <SColumn>XC</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind2</LColumn>
+    <LCaption>规格2</LCaption>
+    <SColumn>ID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind3</LColumn>
+    <LCaption>规格3</LCaption>
+    <SColumn>X3</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind4</LColumn>
+    <LCaption>规格4</LCaption>
+    <SColumn>X4</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind5</LColumn>
+    <LCaption>规格5</LCaption>
+    <SColumn>X43</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind6</LColumn>
+    <LCaption>规格6</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind7</LColumn>
+    <LCaption>规格7</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind8</LColumn>
+    <LCaption>规格8</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind9</LColumn>
+    <LCaption>规格9</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodkind10</LColumn>
+    <LCaption>规格10</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xchagjf</LColumn>
+    <LCaption>换购积分</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xsendjf</LColumn>
+    <LCaption>赠送积分</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xtableid</LColumn>
+    <LCaption>xtableid</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xsubid</LColumn>
+    <LCaption>xsubid</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xversion</LColumn>
+    <LCaption>数据版本</LCaption>
+  </DBRelation>
+</ArrayOfDBRelation>

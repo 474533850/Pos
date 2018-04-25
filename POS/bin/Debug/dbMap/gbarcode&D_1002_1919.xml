@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDBRelation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DBRelation>
+    <LColumn>SID</LColumn>
+    <LCaption>原数据ID</LCaption>
+    <SColumn>XTABLEID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xbarcode</LColumn>
+    <LCaption>条形码</LCaption>
+    <SColumn>XSUBID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>goodunit</LColumn>
+    <LCaption>单位</LCaption>
+    <SColumn>XC</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xtype</LColumn>
+    <LCaption>类型(通用, SKU)</LCaption>
+    <SColumn>ID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xpric</LColumn>
+    <LCaption>条码价格</LCaption>
+    <SColumn>X3</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xtableid</LColumn>
+    <LCaption>xtableid</LCaption>
+    <SColumn>X4</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xsubid</LColumn>
+    <LCaption>xsubid</LCaption>
+    <SColumn>X43</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xversion</LColumn>
+    <LCaption>数据版本</LCaption>
+  </DBRelation>
+</ArrayOfDBRelation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDBRelation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DBRelation>
+    <LColumn>SID</LColumn>
+    <LCaption>原数据ID</LCaption>
+    <SColumn>XTABLEID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xdate</LColumn>
+    <LCaption>收款日期</LCaption>
+    <SColumn>XSUBID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>clntcode</LColumn>
+    <LCaption>顾客代码</LCaption>
+    <SColumn>XC</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>clntname</LColumn>
+    <LCaption>顾客名称</LCaption>
+    <SColumn>ID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xnote</LColumn>
+    <LCaption>备注</LCaption>
+    <SColumn>X3</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xinname</LColumn>
+    <LCaption>录入人</LCaption>
+    <SColumn>X4</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xintime</LColumn>
+    <LCaption>录入时间</LCaption>
+    <SColumn>X43</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xtableid</LColumn>
+    <LCaption>XTABLEID</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xsubid</LColumn>
+    <LCaption>XSUBID</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xversion</LColumn>
+    <LCaption>数据版本</LCaption>
+  </DBRelation>
+</ArrayOfDBRelation>

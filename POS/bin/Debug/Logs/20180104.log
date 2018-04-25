@@ -1,0 +1,116 @@
+2018-01-04 13:42:43,037 [7704] INFO  FormLogin - 操作超时
+2018-01-04 13:51:49,389 [9672] INFO  FormLogin - 操作超时
+2018-01-04 13:51:52,379 [4540] INFO  FormLogin - 操作超时
+2018-01-04 13:52:01,396 [9672] INFO  FormLogin - 操作超时
+2018-01-04 13:52:07,438 [4540] INFO  FormLogin - 操作超时
+2018-01-04 13:52:10,436 [9672] INFO  FormLogin - 操作超时
+2018-01-04 13:52:13,450 [9020] INFO  FormLogin - 操作超时
+2018-01-04 13:52:16,457 [9672] INFO  FormLogin - 操作超时
+2018-01-04 13:52:25,504 [9020] INFO  FormLogin - 操作超时
+2018-01-04 13:52:31,530 [9020] INFO  FormLogin - 操作超时
+2018-01-04 13:52:34,545 [9672] INFO  FormLogin - 操作超时
+2018-01-04 13:52:46,628 [9672] INFO  FormLogin - 操作超时
+2018-01-04 13:53:01,630 [2384] INFO  FormLogin - 操作超时
+2018-01-04 13:53:10,646 [4540] INFO  FormLogin - 操作超时
+2018-01-04 13:53:16,688 [4540] INFO  FormLogin - 操作超时
+2018-01-04 13:53:23,921 [9000] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 13:53:23,939 [8540] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 13:53:24,448 [8540] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 13:53:24,472 [9000] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 13:53:31,737 [2384] INFO  FormLogin - 操作超时
+2018-01-04 13:53:46,813 [7856] INFO  FormLogin - 操作超时
+2018-01-04 14:18:24,226 [10196] INFO  FormLogin - 操作超时
+2018-01-04 14:27:34,133 [8300] INFO  FormLogin - 操作超时
+2018-01-04 14:27:37,166 [9552] INFO  FormLogin - 操作超时
+2018-01-04 14:27:40,184 [8300] INFO  FormLogin - 操作超时
+2018-01-04 14:27:46,241 [8300] INFO  FormLogin - 操作超时
+2018-01-04 14:28:22,335 [9316] INFO  FormLogin - 操作超时
+2018-01-04 14:28:25,349 [9552] INFO  FormLogin - 操作超时
+2018-01-04 14:28:40,393 [9316] INFO  FormLogin - 操作超时
+2018-01-04 14:28:43,419 [9552] INFO  FormLogin - 操作超时
+2018-01-04 14:30:03,977 [7732] INFO  FormLogin - 操作超时
+2018-01-04 14:30:27,988 [7732] INFO  FormLogin - 操作超时
+2018-01-04 14:30:34,003 [7732] INFO  FormLogin - 操作超时
+2018-01-04 14:30:40,010 [9316] INFO  FormLogin - 操作超时
+2018-01-04 14:30:46,490 [8696] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 14:30:52,122 [9552] INFO  FormLogin - 操作超时
+2018-01-04 14:31:07,150 [8824] INFO  FormLogin - 操作超时
+2018-01-04 14:31:53,245 [7732] INFO  FormLogin - 操作超时
+2018-01-04 15:23:25,145 [8308] INFO  FormLogin - ****************************异常文本****************************
+【出现时间】：2018-01-04 15:23:25
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 POS.BLL.SaleBLL.GetSale(String clntCode, GoodModel good, Int32 xtableid) 位置 D:\开发\开发\Pos\POS.BLL\SaleBLL.cs:行号 33
+   在 POS.Sale.FormMain.Sale(GoodModel good, Nullable`1 saleID, Guid id) 位置 D:\开发\开发\Pos\POS\Sale\FormMain.cs:行号 1783
+   在 POS.Sale.FormMain.AddPos(GoodModel good) 位置 D:\开发\开发\Pos\POS\Sale\FormMain.cs:行号 1030
+   在 POS.Sale.FormMain.SearchProduct() 位置 D:\开发\开发\Pos\POS\Sale\FormMain.cs:行号 613
+   在 POS.Sale.FormMain.bteProduct_KeyDown(Object sender, KeyEventArgs e) 位置 D:\开发\开发\Pos\POS\Sale\FormMain.cs:行号 584
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 DevExpress.XtraEditors.BaseEdit.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 DevExpress.XtraEditors.Mask.MaskBox.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Mask.MaskBox.WndProc(Message& m)
+   在 DevExpress.XtraEditors.TextBoxMaskBox.WndProc(Message& msg)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+2018-01-04 16:54:57,038 [8308] INFO  FormLogin - 操作超时
+2018-01-04 16:55:30,158 [9428] INFO  FormLogin - 操作超时
+2018-01-04 16:55:48,230 [8476] INFO  FormLogin - 操作超时
+2018-01-04 16:55:51,253 [8308] INFO  FormLogin - 操作超时
+2018-01-04 16:56:06,285 [8552] INFO  FormLogin - 操作超时
+2018-01-04 16:56:09,302 [9428] INFO  FormLogin - 操作超时
+2018-01-04 16:56:17,001 [1628] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 16:56:17,033 [1628] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 16:56:18,335 [9428] INFO  FormLogin - 操作超时
+2018-01-04 16:56:33,402 [8552] INFO  FormLogin - 操作超时
+2018-01-04 16:56:48,464 [9624] INFO  FormLogin - 操作超时
+2018-01-04 16:57:18,569 [8308] INFO  FormLogin - 操作超时
+2018-01-04 16:57:21,595 [9624] INFO  FormLogin - 操作超时
+2018-01-04 16:57:45,677 [8308] INFO  FormLogin - 操作超时
+2018-01-04 16:57:48,667 [8552] INFO  FormLogin - 操作超时
+2018-01-04 16:58:12,838 [8552] INFO  FormLogin - 操作超时
+2018-01-04 16:58:21,908 [9624] INFO  FormLogin - 操作超时
+2018-01-04 16:58:36,985 [8308] INFO  FormLogin - 操作超时
+2018-01-04 16:58:52,082 [9428] INFO  FormLogin - 操作超时
+2018-01-04 16:59:10,137 [8140] INFO  FormLogin - 操作超时
+2018-01-04 16:59:16,152 [8140] INFO  FormLogin - 操作超时
+2018-01-04 16:59:20,054 [10172] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 16:59:37,147 [8140] INFO  FormLogin - 操作超时
+2018-01-04 17:00:10,283 [8476] INFO  FormLogin - 操作超时
+2018-01-04 17:00:16,434 [8396] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 17:00:16,453 [4164] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 17:00:16,950 [4164] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 17:00:19,284 [9624] INFO  FormLogin - 操作超时
+2018-01-04 17:13:46,898 [7184] INFO  FormLogin - 操作超时
+2018-01-04 17:13:49,953 [8736] INFO  FormLogin - 操作超时
+2018-01-04 17:14:01,912 [3356] INFO  FormLogin - 操作超时
+2018-01-04 20:12:51,388 [3360] INFO  FormLogin - 操作超时
+2018-01-04 20:12:52,908 [3292] INFO  FormLogin - 操作超时
+2018-01-04 20:12:57,359 [4684] INFO  FormLogin - 操作超时
+2018-01-04 20:14:12,544 [9940] INFO  HttpClient - 操作超时
+2018-01-04 20:14:18,178 [9940] INFO  HttpClient - 操作超时
+2018-01-04 20:14:56,596 [7384] INFO  FormLogin - 操作超时
+2018-01-04 20:15:04,020 [9372] INFO  FormLogin - 操作超时
+2018-01-04 20:15:05,594 [7384] INFO  FormLogin - 操作超时
+2018-01-04 20:15:20,871 [7384] INFO  FormLogin - 操作超时
+2018-01-04 21:00:20,832 [8840] INFO  FormLogin - 操作超时
+2018-01-04 21:00:50,975 [8840] INFO  FormLogin - 操作超时
+2018-01-04 21:19:39,885 [9148] INFO  FormLogin - 操作超时
+2018-01-04 21:19:50,294 [3248] INFO  FormLogin - 操作超时
+2018-01-04 21:20:23,957 [3248] INFO  FormLogin - 操作超时
+2018-01-04 21:20:30,146 [8668] INFO  FormLogin - 操作超时
+2018-01-04 21:20:42,311 [5164] INFO  FormLogin - 操作超时
+2018-01-04 21:20:47,171 [7856] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 21:20:54,149 [3248] INFO  FormLogin - 操作超时
+2018-01-04 21:21:03,189 [8668] INFO  FormLogin - 操作超时
+2018-01-04 21:21:15,311 [8208] INFO  FormLogin - 操作超时
+2018-01-04 21:21:30,363 [3248] INFO  FormLogin - 操作超时
+2018-01-04 21:21:36,388 [5164] INFO  FormLogin - 操作超时
+2018-01-04 21:21:42,410 [8668] INFO  FormLogin - 操作超时
+2018-01-04 21:21:51,957 [9692] INFO  FormLogin - 无法连接到远程服务器
+2018-01-04 21:22:09,444 [9148] INFO  FormLogin - 操作超时

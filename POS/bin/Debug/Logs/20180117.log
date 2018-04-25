@@ -1,0 +1,3 @@
+2018-01-17 10:00:05,867 [8216] INFO  FormLogin - 未将对象引用设置到对象的实例。
+2018-01-17 10:05:34,843 [9096] INFO  FormLogin - SQL logic error or missing database
+table clntday already exists

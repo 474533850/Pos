@@ -1,0 +1,19 @@
+2017-12-04 10:24:57,347 [3068] INFO  FormLogin - ****************************异常文本****************************
+【出现时间】：2017-12-04 10:24:57
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 POS.Sale.FormReceipt.IntegralDeduction(ClntModel client, Nullable`1 xpoints) 位置 D:\开发\开发\Pos\POS\Sale\FormReceipt.cs:行号 170
+   在 POS.Sale.FormReceipt..ctor(PoshhModel poshh, ClntModel client, Boolean fastBilling, PoshhModel prePoshh, Form preForm) 位置 D:\开发\开发\Pos\POS\Sale\FormReceipt.cs:行号 118
+   在 POS.Sale.FormMain.btnReceipt_Click(Object sender, EventArgs e) 位置 D:\开发\开发\Pos\POS\Sale\FormMain.cs:行号 1541
+   在 POS.Sale.FormMain.FormMain_KeyDown(Object sender, KeyEventArgs e) 位置 D:\开发\开发\Pos\POS\Sale\FormMain.cs:行号 463
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+

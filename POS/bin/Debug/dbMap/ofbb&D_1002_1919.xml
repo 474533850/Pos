@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDBRelation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DBRelation>
+    <LColumn>SID</LColumn>
+    <LCaption>原数据ID</LCaption>
+    <SColumn>XTABLEID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xnoteb</LColumn>
+    <LCaption>摘要</LCaption>
+    <SColumn>XSUBID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xztype</LColumn>
+    <LCaption>支付方式</LCaption>
+    <SColumn>XC</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xzstate</LColumn>
+    <LCaption>支付状态</LCaption>
+    <SColumn>ID</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>paybillno</LColumn>
+    <LCaption>支付单号</LCaption>
+    <SColumn>X3</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xfee</LColumn>
+    <LCaption>收款金额</LCaption>
+    <SColumn>X4</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xtableid</LColumn>
+    <LCaption>XTABLEID</LCaption>
+    <SColumn>X43</SColumn>
+    <SCaption />
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xsubid</LColumn>
+    <LCaption>XSUBID</LCaption>
+  </DBRelation>
+  <DBRelation>
+    <LColumn>xversion</LColumn>
+    <LCaption>数据版本</LCaption>
+  </DBRelation>
+</ArrayOfDBRelation>
