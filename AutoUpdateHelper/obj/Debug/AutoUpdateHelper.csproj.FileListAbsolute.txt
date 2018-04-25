@@ -1,6 +1,0 @@
-D:\开发\开发\Pos\AutoUpdateHelper\bin\Debug\AutoUpdateHelper.dll
-D:\开发\开发\Pos\AutoUpdateHelper\bin\Debug\AutoUpdateHelper.pdb
-D:\开发\开发\Pos\AutoUpdateHelper\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\开发\开发\Pos\AutoUpdateHelper\obj\Debug\AutoUpdateHelper.csprojResolveAssemblyReference.cache
-D:\开发\开发\Pos\AutoUpdateHelper\obj\Debug\AutoUpdateHelper.dll
-D:\开发\开发\Pos\AutoUpdateHelper\obj\Debug\AutoUpdateHelper.pdb

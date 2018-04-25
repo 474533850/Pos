@@ -1,5 +1,0 @@
-D:\开发\开发\Pos\POS.Model\bin\Release\POS.Model.dll
-D:\开发\开发\Pos\POS.Model\bin\Release\POS.Model.pdb
-D:\开发\开发\Pos\POS.Model\obj\Release\POS.Model.dll
-D:\开发\开发\Pos\POS.Model\obj\Release\POS.Model.pdb
-D:\开发\开发\Pos\POS.Model\obj\Release\POS.Model.csprojResolveAssemblyReference.cache

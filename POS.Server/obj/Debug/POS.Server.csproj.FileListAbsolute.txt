@@ -1,7 +1,0 @@
-D:\开发\开发\Pos\POS.Server\bin\Debug\POS.Server.exe
-D:\开发\开发\Pos\POS.Server\bin\Debug\POS.Server.pdb
-D:\开发\开发\Pos\POS.Server\obj\Debug\POS.Server.Properties.Resources.resources
-D:\开发\开发\Pos\POS.Server\obj\Debug\POS.Server.csproj.GenerateResource.Cache
-D:\开发\开发\Pos\POS.Server\obj\Debug\POS.Server.exe
-D:\开发\开发\Pos\POS.Server\obj\Debug\POS.Server.pdb
-D:\开发\开发\Pos\POS.Server\obj\Debug\POS.Server.csprojResolveAssemblyReference.cache

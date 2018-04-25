@@ -1,5 +1,0 @@
-D:\开发\开发\Pos\AutoUpdateHelper\bin\Release\AutoUpdateHelper.dll
-D:\开发\开发\Pos\AutoUpdateHelper\bin\Release\AutoUpdateHelper.pdb
-D:\开发\开发\Pos\AutoUpdateHelper\bin\Release\ICSharpCode.SharpZipLib.dll
-D:\开发\开发\Pos\AutoUpdateHelper\obj\Release\AutoUpdateHelper.dll
-D:\开发\开发\Pos\AutoUpdateHelper\obj\Release\AutoUpdateHelper.pdb
